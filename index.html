@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda Personnel</title>
 
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ÉCRAN DE BIENVENUE -->
+  <div id="welcome-screen" class="screen">
+    <h1>Bienvenue</h1>
+    <p>Choisissez votre langue</p>
+
+    <div class="lang-buttons">
+      <button class="lang-btn" data-lang="fr">Français</button>
+      <button class="lang-btn" data-lang="en">English</button>
+    </div>
+  </div>
+
+  <!-- ÉCRAN PRINCIPAL -->
+  <div id="app-screen" class="screen hidden">
+    <h2 id="greeting"></h2>
+
+    <div class="card">
+      <h3>📅 Calendrier</h3>
+      <p>(fonction calendrier à venir)</p>
+    </div>
+
+    <div class="card">
+      <h3>📝 Activités</h3>
+      <p>(fonction activités à venir)</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+
+</body>
+</html>
