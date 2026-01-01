@@ -1,1 +1,9 @@
-
+{
+  "name": "Agenda Personnel",
+  "short_name": "Agenda",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f2f4f7",
+  "theme_color": "#6366f1",
+  "orientation": "portrait"
+}
