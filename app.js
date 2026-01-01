@@ -1,3 +1,4 @@
+alert("JS charge !");
 document.addEventListener("DOMContentLoaded", () => {
 
   const welcomeScreen = document.getElementById("welcome-screen");
